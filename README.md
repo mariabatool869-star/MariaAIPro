@@ -5,18 +5,20 @@ A professional FAQ chatbot built as a portfolio showcase project. It answers que
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![NLP](https://img.shields.io/badge/NLP-TF--IDF%20%2B%20Cosine-6C3CE1)
+![NLP](https://img.shields.io/badge/NLP-TF--IDF%20%2B%20Cosine-blue)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
----
+## 🚀 Live Demo
 
-## Live Demo
+[![MariaAIPro Demo](https://via.placeholder.com/800x400/6C3CE1/FFFFFF?text=MariaAIPro+Chatbot)](https://mariabatool869-star.github.io/CodeAlpha_AI_MariaAIPro/)
 
-Open [`index.html`](index.html) in any modern browser — no install or build step required.
+**Click the image to try the live demo!** 🤖
 
-> **Tip:** Deploy to [GitHub Pages](https://pages.github.com/) for a shareable portfolio link.
+👉 **[Direct Link: https://mariabatool869-star.github.io/CodeAlpha_AI_MariaAIPro/](https://mariabatool869-star.github.io/CodeAlpha_AI_MariaAIPro/)**
 
----
+> Ask questions like "What is machine learning?" or "How to get an AI internship?" to see the NLP engine in action!
+
+
 
 ## Overview
 
