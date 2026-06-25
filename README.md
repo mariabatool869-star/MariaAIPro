@@ -10,12 +10,6 @@ A professional FAQ chatbot built as a portfolio showcase project. It answers que
 
 ---
 
-# MariaAIPro — AI Internship Assistant
-
-[![Live Demo](https://img.shields.io/badge/Live_Demo-🌍_Try_Now-6C3CE1?style=for-the-badge&logo=github)](https://mariabatool869-star.github.io/MariaAIPro/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://mariabatool869-star.github.io/MariaAIPro/)
-...
----
 
 ## Overview
 
