@@ -349,7 +349,7 @@
         </button>
       </div>
       <div class="input-hints" id="input-hints">
-        <span>Press Enter to send Â· Ctrl+/ to focus Â· Esc to clear</span>
+        <span>Press Enter to send | Ctrl+/ to focus | Esc to clear</span>
         <span class="char-counter" id="char-counter">0/500</span>
       </div>
     </div>
@@ -370,8 +370,8 @@
       <h2 id="analytics-title"><i class="fas fa-chart-bar"></i> Analytics Dashboard</h2>
       <div class="stat-grid">
         <div class="stat-card"><div class="label">Questions Asked</div><div class="value" id="stat-total">0</div></div>
-        <div class="stat-card"><div class="label">Avg Confidence</div><div class="value" id="stat-confidence">â€”</div></div>
-        <div class="stat-card"><div class="label">Satisfaction Rate</div><div class="value" id="stat-satisfaction">â€”</div></div>
+        <div class="stat-card"><div class="label">Avg Confidence</div><div class="value" id="stat-confidence">--</div></div>
+        <div class="stat-card"><div class="label">Satisfaction Rate</div><div class="value" id="stat-satisfaction">--</div></div>
         <div class="stat-card"><div class="label">Unanswered</div><div class="value" id="stat-unanswered">0</div></div>
       </div>
       <div class="modal-section">
@@ -472,7 +472,7 @@ const FAQ_DATA = [
   {
     category: 'AI/ML Fundamentals',
     question: 'What is Artificial Intelligence?',
-    answer: 'Artificial Intelligence (AI) is the field of computer science focused on building systems that can perform tasks requiring human-like intelligenceâ€”such as reasoning, learning, perception, and language understanding. Modern AI spans rule-based systems, machine learning, deep learning, and generative models used in products from search engines to medical diagnostics.'
+    answer: 'Artificial Intelligence (AI) is the field of computer science focused on building systems that can perform tasks requiring human-like intelligence -such as reasoning, learning, perception, and language understanding. Modern AI spans rule-based systems, machine learning, deep learning, and generative models used in products from search engines to medical diagnostics.'
   },
   {
     category: 'AI/ML Fundamentals',
@@ -482,7 +482,7 @@ const FAQ_DATA = [
   {
     category: 'AI/ML Fundamentals',
     question: 'Explain supervised, unsupervised, and reinforcement learning',
-    answer: 'Supervised learning uses labeled data (input â†’ known output) for tasks like classification and regression. Unsupervised learning finds patterns in unlabeled dataâ€”clustering, dimensionality reduction. Reinforcement learning trains agents via rewards/penalties while interacting with an environmentâ€”used in robotics, game AI, and recommendation tuning.'
+    answer: 'Supervised learning uses labeled data (input -> known output) for tasks like classification and regression. Unsupervised learning finds patterns in unlabeled data -clustering, dimensionality reduction. Reinforcement learning trains agents via rewards/penalties while interacting with an environment -used in robotics, game AI, and recommendation tuning.'
   },
   {
     category: 'AI/ML Fundamentals',
@@ -492,7 +492,7 @@ const FAQ_DATA = [
   {
     category: 'AI/ML Fundamentals',
     question: 'What is the difference between classification and regression?',
-    answer: 'Classification predicts discrete categories (spam/not spam, dog/cat/bird). Regression predicts continuous numerical values (house prices, temperature). Classification uses metrics like accuracy and F1-score; regression uses MAE, MSE, and RÂ². The choice depends on whether your target variable is categorical or numeric.'
+    answer: 'Classification predicts discrete categories (spam/not spam, dog/cat/bird). Regression predicts continuous numerical values (house prices, temperature). Classification uses metrics like accuracy and F1-score; regression uses MAE, MSE, and R^2. The choice depends on whether your target variable is categorical or numeric.'
   },
   {
     category: 'AI/ML Fundamentals',
@@ -517,7 +517,7 @@ const FAQ_DATA = [
   {
     category: 'AI/ML Fundamentals',
     question: 'Explain the difference between batch and stochastic gradient descent',
-    answer: 'Batch Gradient Descent uses the entire dataset per updateâ€”stable but slow on large data. Stochastic Gradient Descent (SGD) updates per single sampleâ€”noisy but fast and escapes local minima. Mini-batch GD is the practical middle ground, processing small batches (32â€“256 samples) per update, widely used in deep learning.'
+    answer: 'Batch Gradient Descent uses the entire dataset per update -stable but slow on large data. Stochastic Gradient Descent (SGD) updates per single sample -noisy but fast and escapes local minima. Mini-batch GD is the practical middle ground, processing small batches (32-256 samples) per update, widely used in deep learning.'
   },
   // Category 2: Tools & Technologies (8)
   {
@@ -538,7 +538,7 @@ const FAQ_DATA = [
   {
     category: 'Tools & Technologies',
     question: 'What is Docker and why is it important for AI?',
-    answer: 'Docker containerizes applications with all dependencies, ensuring reproducible environments across machines. For AI, it packages models, Python versions, CUDA libraries, and APIs consistentlyâ€”from development to cloud deployment. Essential for MLOps, CI/CD pipelines, and team collaboration where "works on my machine" is unacceptable.'
+    answer: 'Docker containerizes applications with all dependencies, ensuring reproducible environments across machines. For AI, it packages models, Python versions, CUDA libraries, and APIs consistently -from development to cloud deployment. Essential for MLOps, CI/CD pipelines, and team collaboration where "works on my machine" is unacceptable.'
   },
   {
     category: 'Tools & Technologies',
@@ -558,7 +558,7 @@ const FAQ_DATA = [
   {
     category: 'Tools & Technologies',
     question: 'What is the difference between SQL and NoSQL?',
-    answer: 'SQL databases (PostgreSQL, MySQL) use structured tables with schemasâ€”ideal for relational data and ACID transactions. NoSQL (MongoDB, Redis, Cassandra) handles flexible/unstructured data at scale with various models (document, key-value, graph). ML pipelines often use SQL for feature stores and NoSQL for real-time inference caching.'
+    answer: 'SQL databases (PostgreSQL, MySQL) use structured tables with schemas -ideal for relational data and ACID transactions. NoSQL (MongoDB, Redis, Cassandra) handles flexible/unstructured data at scale with various models (document, key-value, graph). ML pipelines often use SQL for feature stores and NoSQL for real-time inference caching.'
   },
   // Category 3: Internship Application (10)
   {
@@ -579,22 +579,22 @@ const FAQ_DATA = [
   {
     category: 'Internship Application',
     question: 'What projects should I include in my portfolio?',
-    answer: 'Include 3â€“5 quality projects: an end-to-end ML pipeline, an NLP or CV project, and something deployed (API/web app). Each should have a README, clean code on GitHub, clear problem statement, methodology, results with metrics, and visuals. This TF-IDF chatbot itself demonstrates NLP + full-stack skillsâ€”exactly what recruiters look for.'
+    answer: 'Include 3-5 quality projects: an end-to-end ML pipeline, an NLP or CV project, and something deployed (API/web app). Each should have a README, clean code on GitHub, clear problem statement, methodology, results with metrics, and visuals. This TF-IDF chatbot itself demonstrates NLP + full-stack skills -exactly what recruiters look for.'
   },
   {
     category: 'Internship Application',
     question: 'How to write a CV for AI positions?',
-    answer: 'Lead with education and relevant coursework (ML, stats, linear algebra). Highlight projects with quantified results. List technical skills grouped by category. Include GitHub/LinkedIn links. Keep to one page for internships. Tailor keywords to the job description. Avoid buzzwords without evidenceâ€”show impact with numbers.'
+    answer: 'Lead with education and relevant coursework (ML, stats, linear algebra). Highlight projects with quantified results. List technical skills grouped by category. Include GitHub/LinkedIn links. Keep to one page for internships. Tailor keywords to the job description. Avoid buzzwords without evidence -show impact with numbers.'
   },
   {
     category: 'Internship Application',
     question: 'What to expect in an AI internship?',
-    answer: 'Typical activities: data cleaning, feature engineering, model experimentation, literature review, writing reports, and collaborating in agile teams. You may work on a specific product feature or research prototype. Expect mentorship, code reviews, and presentations. Document everythingâ€”internship projects become full-time interview talking points.'
+    answer: 'Typical activities: data cleaning, feature engineering, model experimentation, literature review, writing reports, and collaborating in agile teams. You may work on a specific product feature or research prototype. Expect mentorship, code reviews, and presentations. Document everything -internship projects become full-time interview talking points.'
   },
   {
     category: 'Internship Application',
     question: 'How to network for internship opportunities?',
-    answer: 'Attend AI conferences (local and virtual), join university AI clubs, contribute on LinkedIn/Twitter, and engage with open-source communities. Informational interviews with alumni are powerful. Share your learning journey publicly. Quality connections beat quantityâ€”follow up genuinely and offer value before asking for referrals.'
+    answer: 'Attend AI conferences (local and virtual), join university AI clubs, contribute on LinkedIn/Twitter, and engage with open-source communities. Informational interviews with alumni are powerful. Share your learning journey publicly. Quality connections beat quantity -follow up genuinely and offer value before asking for referrals.'
   },
   {
     category: 'Internship Application',
@@ -609,7 +609,7 @@ const FAQ_DATA = [
   {
     category: 'Internship Application',
     question: 'What questions should I ask in an AI interview?',
-    answer: 'Ask about: team structure, mentorship style, tech stack, typical intern projects, success metrics, ML deployment practices, and growth opportunities. Questions like "How does the team handle model monitoring?" show maturity. Avoid asking only about perksâ€”demonstrate genuine interest in the team\'s technical challenges.'
+    answer: 'Ask about: team structure, mentorship style, tech stack, typical intern projects, success metrics, ML deployment practices, and growth opportunities. Questions like "How does the team handle model monitoring?" show maturity. Avoid asking only about perks -demonstrate genuine interest in the team\'s technical challenges.'
   },
   // Category 4: Career Development (7)
   {
@@ -620,12 +620,12 @@ const FAQ_DATA = [
   {
     category: 'Career Development',
     question: 'How to transition from student to AI professional?',
-    answer: 'Build a portfolio, intern or contribute to research labs, network actively, and develop T-shaped skills (broad ML knowledge + one deep specialty). Practice communicating technical work to non-technical audiences. Seek feedback on code reviews. The transition is gradualâ€”treat every project and internship as a stepping stone.'
+    answer: 'Build a portfolio, intern or contribute to research labs, network actively, and develop T-shaped skills (broad ML knowledge + one deep specialty). Practice communicating technical work to non-technical audiences. Seek feedback on code reviews. The transition is gradual -treat every project and internship as a stepping stone.'
   },
   {
     category: 'Career Development',
     question: 'What is the typical salary range for AI roles?',
-    answer: 'Salaries vary by location and level. US AI interns: $25â€“$60/hour at top tech companies. Entry-level ML engineers: $90Kâ€“$150K+. Senior roles and FAANG positions exceed $200K total comp. EU/UK ranges are lower but growing. Focus on skills and experience firstâ€”compensation scales quickly with demonstrated impact.'
+    answer: 'Salaries vary by location and level. US AI interns: $25-$60/hour at top tech companies. Entry-level ML engineers: $90K-$150K+. Senior roles and FAANG positions exceed $200K total comp. EU/UK ranges are lower but growing. Focus on skills and experience first -compensation scales quickly with demonstrated impact.'
   },
   {
     category: 'Career Development',
@@ -656,12 +656,12 @@ const FAQ_DATA = [
   {
     category: 'Practical Skills',
     question: 'What is feature engineering?',
-    answer: 'Feature engineering transforms raw data into informative inputs for ML models. Techniques: encoding categoricals (one-hot, target encoding), scaling (standardization, normalization), datetime features, polynomial interactions, domain-specific features, and embeddings for text/images. Good features often beat complex modelsâ€”it's where domain knowledge creates the most value.'
+    answer: 'Feature engineering transforms raw data into informative inputs for ML models. Techniques: encoding categoricals (one-hot, target encoding), scaling (standardization, normalization), datetime features, polynomial interactions, domain-specific features, and embeddings for text/images. Good features often beat complex models—it\'s where domain knowledge creates the most value.'
   },
   {
     category: 'Practical Skills',
     question: 'How to evaluate ML models?',
-    answer: 'Choose metrics aligned with business goals. Classification: accuracy, precision, recall, F1, AUC-ROC. Regression: MAE, RMSE, RÂ². Use confusion matrices and learning curves. Always split data train/validation/test. Compare against baselines. Consider fairness metrics and error analysis on failure casesâ€”not just aggregate scores.'
+    answer: 'Choose metrics aligned with business goals. Classification: accuracy, precision, recall, F1, AUC-ROC. Regression: MAE, RMSE, R^2. Use confusion matrices and learning curves. Always split data train/validation/test. Compare against baselines. Consider fairness metrics and error analysis on failure cases -not just aggregate scores.'
   },
   {
     category: 'Practical Skills',
@@ -680,7 +680,7 @@ const FAQ_DATA = [
 
 /**
  * Porter Stemmer implementation (Porter 1980 algorithm)
- * Reduces words to root form: "running" â†’ "run"
+ * Reduces words to root form: "running" -> "run"
  * @param {string} word - Input word
  * @returns {string} Stemmed word
  */
@@ -823,7 +823,7 @@ function porterStemmer(word) {
 }
 
 /**
- * Text preprocessing pipeline: lowercase â†’ remove punctuation â†’ tokenize â†’ stopwords â†’ stem
+ * Text preprocessing pipeline: lowercase -> remove punctuation -> tokenize -> stopwords -> stem
  * @param {string} text - Raw input text
  * @returns {string[]} Array of processed tokens
  */
@@ -921,7 +921,7 @@ class TfIdfVectorizer {
 }
 
 /**
- * Cosine similarity between two vectors: (AÂ·B) / (||A|| * ||B||)
+ * Cosine similarity between two vectors: (A dot B) / (||A|| * ||B||)
  * @param {number[]} a - Vector A
  * @param {number[]} b - Vector B
  * @returns {number} Similarity score 0-1
@@ -1483,13 +1483,13 @@ function updateAnalyticsDashboard() {
   const scores = analytics.confidenceScores || [];
   const avgConf = scores.length
     ? (scores.reduce((a, b) => a + b, 0) / scores.length * 100).toFixed(1) + '%'
-    : 'â€”';
+    : '--';
   document.getElementById('stat-confidence').textContent = avgConf;
 
   const totalFb = feedback.up + feedback.down;
   const satRate = totalFb > 0
     ? ((feedback.up / totalFb) * 100).toFixed(0) + '%'
-    : 'â€”';
+    : '--';
   document.getElementById('stat-satisfaction').textContent = satRate;
 
   const questionCounts = {};
@@ -1647,7 +1647,7 @@ function runUnitTests() {
 
   assert('preprocess removes stopwords', !preprocess('what is the machine learning').includes('what'));
   assert('preprocess lowercases', preprocess('Hello WORLD').includes('hello'));
-  assert('porterStemmer runningâ†’run', porterStemmer('running') === 'run' || porterStemmer('running').startsWith('run'));
+  assert('porterStemmer running->run', porterStemmer('running') === 'run' || porterStemmer('running').startsWith('run'));
   assert('cosine identical vectors = 1', Math.abs(cosineSimilarity([1, 0], [1, 0]) - 1) < 0.001);
   assert('cosine orthogonal = 0', cosineSimilarity([1, 0], [0, 1]) === 0);
   assert('FAQ count >= 40', FAQ_DATA.length >= 40);
